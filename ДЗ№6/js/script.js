@@ -1,16 +1,16 @@
 'use strict';
 
 //1
-Boolean(Number(`10`)) + 1;
+Boolean(Number('10')) + 1; //2
 
 //2
-`sub ` + Number(false);
+'sub ' + Number(false);  // sub 0
 
 //3
-16  *  `      91    `
+16  *  '      91    ' //1456
 
 //4
-true-70
+true-70 //-69
 
 //5
-Number(1 + String(1)) + 1
+Number(1 + String(1)) + 1  //12
