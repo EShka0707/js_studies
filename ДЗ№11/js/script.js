@@ -39,7 +39,7 @@ if ((a > 2) && (a < 11) || (b >= 6) && (b < 14)) {
 }
 //13
 let num = 2;
-let result;
+let result = null;
 
 switch (num) {
     case 1:
