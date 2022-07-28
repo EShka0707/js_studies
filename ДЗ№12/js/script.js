@@ -11,14 +11,14 @@ if (age === null || age === '') {
 }
 
 const city = prompt('В каком городе вы живете?');
-if (city == null || city === '') {
+if (city === null || city === '') {
     alert('${userMessage}свой город проживания');
 }
 
 const sport = prompt('Какой ваш любимый вид спорта?');
-if (sport == null || sport === '') {
-    alert('${userMessage}свой любимый вид спорта');
-}
+if (sport === null || sport === '') {
+    alert('${userMessage}' + 'свой любимый вид спорта');
+} 
 
 let choiceCity = null;
 
