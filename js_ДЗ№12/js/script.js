@@ -24,42 +24,42 @@ let choiceCity = null;
 
 switch (city) {
     case 'Киев':
-        choiceCity = 'Вы живете в столице Украины - Киев';
+        choiceCity = `Вы живете в столице Украины - Киев`;
         break;
     case 'Москва':
-        choiceCity = 'Вы живете в столице России - Москва';
+        choiceCity = `Вы живете в столице России - Москва`;
         break;
     case 'Минск':
-        choiceCity = 'Вы живете в столице Беларуси - Минск';
+        choiceCity = `Вы живете в столице Беларуси - Минск`;
         break;
     case '':
     case null:
-        choiceCity = 'Вы так и не ввели свой город прожиания';
-        choiceCity = 'Вы так и не ввели свой город прожиания';
+        choiceCity = `Вы так и не ввели свой город прожиания`;
+        choiceCity = `Вы так и не ввели свой город прожиания`;
         break;
     default:
-        choiceCity = 'Вы живете в городе - ' + city;
+        choiceCity = `Вы живете в городе - ${city}`;
 } 
 
 let choiceSport = null;
 
 switch (sport){
     case 'хоккей':
-        choiceSport = 'Круто! Хочешь стать как Александр Овечкин!';
+        choiceSport = `Круто! Хочешь стать как Александр Овечкин!`;
         break;
     case 'футбол':
-        choiceSport = 'Круто! Хочешь стать как Криштиану Рональду';
+        choiceSport = `Круто! Хочешь стать как Криштиану Рональду`;
         break;
     case 'плавание':
-        choiceSport = 'Круто! Хочешь стать как Марк Спитц!';
+        choiceSport = `Круто! Хочешь стать как Марк Спитц!`;
         break;
     case '':
     case null:
-        choiceSport = 'Вы так и не ввели любимый вид спорта';
-        choiceSport = 'Вы так и не ввели любимый вид спорта';
+        choiceSport = `Вы так и не ввели любимый вид спорта`;
+        choiceSport = `Вы так и не ввели любимый вид спорта`;
         break;
     default:
-        choiceSport = 'Круто! Ты можешь стать великим спортсменом!';
+        choiceSport = `Круто! Ты можешь стать великим спортсменом!`;
 }
 
 alert('Ваш возраст - ' + age + '\n' + choiceCity + '\n' + choiceSport);
