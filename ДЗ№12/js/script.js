@@ -38,7 +38,7 @@ switch (city) {
         choiceCity = 'Вы так и не ввели свой город прожиания';
         break;
     default:
-        choiceCity = 'Вы живете в городе - ' + city;
+        choiceCity = 'Вы живете в городе - ${city}';
 } 
 
 let choiceSport = null;
