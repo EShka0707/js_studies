@@ -24,13 +24,13 @@ let choiceCity = null;
 
 switch (city) {
     case 'Киев':
-        choiceCity = 'Вы живете в столице Украины - ${city}';
+        choiceCity = 'Вы живете в столице Украины - Киев';
         break;
     case 'Москва':
-        choiceCity = 'Вы живете в столице России - ${city}';
+        choiceCity = 'Вы живете в столице России - Москва';
         break;
     case 'Минск':
-        choiceCity = 'Вы живете в столице Беларуси - ${city}';
+        choiceCity = 'Вы живете в столице Беларуси - Минск';
         break;
     case '':
     case null:
@@ -38,7 +38,7 @@ switch (city) {
         choiceCity = 'Вы так и не ввели свой город прожиания';
         break;
     default:
-        choiceCity = 'Вы живете в городе - ${city}';
+        choiceCity = 'Вы живете в городе - ' + city;
 } 
 
 let choiceSport = null;
@@ -62,8 +62,6 @@ switch (sport){
         choiceSport = 'Круто! Ты можешь стать великим спортсменом!';
 }
 
-alert('Ваш возраст - ' + age + '\nВаш город проживания - ' + city + '\nВаш любимый вид спорта - ' + sport);
+alert('Ваш возраст - ' + age + '\n' + choiceCity + '\n' + choiceSport);
 
 // alert('Ваш возраст - ' + age + '\n' + 'Ваш город проживания - ' + city + '\n' + 'Ваш любимый вид спорта - ' + sport);
-
-
