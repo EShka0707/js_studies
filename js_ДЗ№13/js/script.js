@@ -19,8 +19,6 @@ x > y? console.log('x больше, чем y'): console.log('x не больше
 
 const num = +prompt('Введите целое число');
 let length = null;
-let a = 'string'; 
-console.log(a.length);
 
 if (num > 0) {
     switch (length) {
