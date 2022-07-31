@@ -19,8 +19,10 @@ x > y? console.log('x больше, чем y'): console.log('x не больше
 
 const num = +prompt('Введите целое число');
 let length = null;
+let a = 'string'; 
+console.log(a.length);
 
-if (num >= 0) {
+if (num > 0) {
     switch (length) {
         case 1:
             length = `однозначное`;
@@ -34,8 +36,11 @@ if (num >= 0) {
         default:
             length = `многозначное`;
     }
-} else if (num < -1) {
+} else if (num < -0) {
     switch (length) {
+        case 0:
+            length = `Вы не ввели число`;
+            break;
         case 1:
             length = `однозначное`;
             break;
@@ -48,5 +53,7 @@ if (num >= 0) {
         default:
             length = `многозначное`;
     }
+} else {
+    alert('Вы не ввели число');
 }
-num < 0 ? console.log(`Число ${num} ${length} положительное`) : console.log(`Число ${num} ${length} отрицательное`);
+num < 0 ? console.log(`Число ${num} ${length} отрицательное`) : console.log(`Число ${num} ${length} положительное`);
