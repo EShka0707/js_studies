@@ -35,7 +35,7 @@
 //5
 // const arr = [1, 2, 3, 4, 5];
 // let sum = null;
-// for(let i = 0; i < arr.length; i++) {
+// for(let i = 0; i < arr.length; i += 1) {
 //     sum += Math.pow(arr[i], 2)
 //     // sum +=arr[i] **2;
 // }
