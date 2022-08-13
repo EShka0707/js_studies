@@ -2,17 +2,16 @@
 
 const arr = [1, 2, 3, -1, -2, -3];
 
-const getPositiveNumbersArray = (initialArray) => {
-    const defaultResult = []
+const getPositiveNumbersArray = initialArray => {
+    const defaultResult = [];
     
-    if( !Array.isArray(initialArray) ) return defaultResult;
-    if( !initialArray.length ) return defaultResult;
-     
+    if( !Array.isArray(initialArray) || !initialArray.length ) return defaultResult;
+
     const positiveNumbersArray = [];
 
     for(let i = 0; i < initialArray.length; i += 1) {
 
-        if(typeof initialArray[i] !== 'number') continue;
+        if((typeof initialArray[i] !== 'number') || isNaN(initialArray[i])) continue;
 
         if( initialArray[i] > 0 ) {
 
@@ -22,5 +21,5 @@ const getPositiveNumbersArray = (initialArray) => {
     return positiveNumbersArray.length > 0 ? positiveNumbersArray : defaultResult;
 }
 
-const positiveNumbersArray = getPositiveNumbersArray(arr)
+const positiveNumbersArray = getPositiveNumbersArray(arr);
 console.log(positiveNumbersArray);
