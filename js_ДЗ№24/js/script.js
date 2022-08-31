@@ -85,12 +85,41 @@
 // console.log(newArray9);
 
 //10
-const arr10 = [[1, 2, 3], [4, 5], [6]];
-let sum = 0;
+// const arr10 = [
+//     [1, 2, 3], 
+//     [4, 5], 
+//     [6]
+// ];
+// let sum = 0;
 
-for (let i = 0; i < arr10.length; i++) {
-    for (let j = 0; j < arr10[i].length; j++) {
-        sum += arr10[i][j];
+// for (let i = 0; i < arr10.length; i++) {
+    
+//     for (let j = 0; j < arr10[i].length; j++) {
+//         sum += arr10[i][j];
+//     }
+// }
+// console.log(sum);
+
+//11
+const arr11 = [
+    [
+        [1, 2], 
+        [3, 4]
+    ], 
+    [
+        [5, 6], 
+        [7, 8]
+    ]
+];
+let sum2 = 0;
+
+for (let i = 0; i < arr11.length; i++) {
+
+    for (let j = 0; j < arr11[i].length; j++) {
+
+        for (let k = 0; k < arr11[j].length; k++) {
+            sum2 += arr11[i][j][k];
+        }
     }
 }
-console.log(sum);
+console.log(sum2);
