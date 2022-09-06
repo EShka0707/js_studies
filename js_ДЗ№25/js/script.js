@@ -23,7 +23,7 @@ console.log(arr.indexOf(4));
 const string = 'hello';
 let lastString = string.lastIndexOf('l');
 
-console.log(lastString);
+console.log(lastString); 
 
 
 
