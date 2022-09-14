@@ -6,7 +6,7 @@ function randomNum () {
 
     return function () {
         
-        let result = Math.floor(Math.random() * 100) +1;
+        const result = Math.floor(Math.random() * 100) +1;
 
         for (let i = 0; i < userNum.length; i += 1) {
             if (userNum[i] === result) return;
