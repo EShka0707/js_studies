@@ -16,7 +16,7 @@ const counter = (number = 0) => {
         value,
         increse,
         decrease
-    }
+    } 
 }
 
 const resultCounter = counter(7);
