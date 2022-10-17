@@ -1,22 +1,28 @@
 'use strict';
 
-let calculator = {
-  read: function() {
-    this.a = +prompt('Enter the first number', 0);
-    this.b = +prompt('Enter the second number', 0);
+(function() {
 
-    if(isNaN(this.a) || isNaN(this.b)) return alert('you didn`t enter a number');
+  const calculator = {
 
-  },
-  sum: function() {
-    return this.a + this.b;
-  },
-  mul: function() {
-    return this.a * this.b;
-  }
-};
+    read() {
+      this.a = +prompt('Enter the first number', 0);
+      this.b = +prompt('Enter the second number', 0);
   
-calculator.read(5,7);
+      if(isNaN(this.a) || isNaN(this.b)) return alert('you didn`t enter a number');
+  
+    },
+    sum() {
+      return this.a + this.b;
+    },
+    mul() {
+      return this.a * this.b;
+    }
+  };
 
-alert( calculator.sum() );
-alert( calculator.mul() );
+  calculator.read(5,7);
+
+  alert( calculator.sum() );
+  alert( calculator.mul() );
+  
+})()
+
