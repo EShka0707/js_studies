@@ -17,8 +17,8 @@
         
     }
     
-    arrLi.forEach((element) => {
-        console.log(element);
+    arrLi.forEach((elem) => {
+        console.log(elem);
     });
 
     console.log(arrLi.length);
