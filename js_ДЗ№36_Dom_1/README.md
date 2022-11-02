@@ -1,6 +1,6 @@
 ДЗ #36 — DOM V1
 
-Файлы в который выполнять ДЗ — ссылка (https://github.com/junjun-it-courses/DOM_basic_dz)
+Файлы в который выполнять ДЗ — [ссылка] (https://github.com/junjun-it-courses/DOM_basic_dz)
 
 Решение пишем в файле solution.js
 
